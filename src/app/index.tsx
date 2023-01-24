@@ -3,7 +3,7 @@ import { withProvider } from "./providers/with-providers";
 
 const App = () => {
   return (
-    <div>
+    <div className="container">
       <Routing />
     </div>
   );

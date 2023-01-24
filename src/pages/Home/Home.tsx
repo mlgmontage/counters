@@ -10,6 +10,9 @@ const Home = () => {
 
   return (
     <div className={styles.root}>
+      <Link to="/create">
+        <CounterCard>Create counter</CounterCard>
+      </Link>
       {counters.map((counter, i) => (
         <CounterCard key={i}>
           <Link to={`/counter/${i}`}>{counter.title}</Link>

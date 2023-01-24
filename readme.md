@@ -1,1 +1,3 @@
-# Feature-sliced template
+# Counters
+
+- [ ] Make better design
