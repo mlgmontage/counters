@@ -21,11 +21,14 @@ const countersModel = createSlice({
     increment: (state, { payload }: PayloadAction<number>) => {
       state[payload].count += 1;
     },
+    addCounter: (state, { payload }: PayloadAction<Counter>) => {
+      state.unshift(payload);
+    },
   },
 });
 
 export const countersReducer = countersModel.reducer;
-export const { increment } = countersModel.actions;
+export const { increment, addCounter } = countersModel.actions;
 
 export const countersSelector = (state: RootState) => state.counters;
 

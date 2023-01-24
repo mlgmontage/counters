@@ -17,6 +17,29 @@ h6 {
   font-weight: 400;
 }
 
+button {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  font-size: inherit;
+  background-color: transparent;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--round);
+  color: inherit;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  display: block;
+  padding: 0.5rem;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--round);
+  font-family: inherit;
+  width: 100%;
+  background-color: transparent;
+  margin-bottom: 1rem;
+}
+
 .container {
   display: flow-root;
   min-height: 100vh;
