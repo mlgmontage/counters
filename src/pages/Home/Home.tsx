@@ -9,18 +9,20 @@ const Home = () => {
   const counters = useSelector(countersSelector);
 
   return (
-    <div className={styles.root}>
-      <Link to="/create">
-        <CounterCard>Create counter</CounterCard>
-      </Link>
-      {counters.map((counter, i) => (
-        <CounterCard key={i}>
-          <Link to={`/counter/${i}`}>{counter.title}</Link>
-          <br />
-          <br />
-          {counter.description}
-        </CounterCard>
-      ))}
+    <div className="container">
+      <div className={styles.root}>
+        <Link to="/create">
+          <CounterCard>Create counter</CounterCard>
+        </Link>
+        {counters.map((counter, i) => (
+          <CounterCard key={i}>
+            <Link to={`/counter/${i}`}>{counter.title}</Link>
+            <br />
+            <br />
+            {counter.description}
+          </CounterCard>
+        ))}
+      </div>
     </div>
   );
 };

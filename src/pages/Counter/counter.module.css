@@ -3,3 +3,8 @@
   place-items: center;
   min-height: 100vh;
 }
+
+.counter {
+  font-size: 5rem;
+  font-weight: 700;
+}

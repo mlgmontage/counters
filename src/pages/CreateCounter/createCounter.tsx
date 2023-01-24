@@ -1,5 +1,5 @@
 const CreateCounter = () => {
-  return <div>Create Counter</div>;
+  return <div className="container">Create Counter</div>;
 };
 
 export default CreateCounter;
