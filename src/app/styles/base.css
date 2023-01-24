@@ -18,6 +18,8 @@ h6 {
 }
 
 .container {
+  display: flow-root;
+  min-height: 100vh;
   width: 1200px;
   margin-inline: auto;
 }

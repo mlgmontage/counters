@@ -27,13 +27,13 @@ const Counter = () => {
     backgroundColor: `hsl(${counter.count}, 20%, 90%)`,
   };
 
-  const color: CSSProperties = {
+  const text: CSSProperties = {
     color: `hsl(${counter.count}, 90%, 20%)`,
   };
 
   return (
     <div className={styles.root} style={bg}>
-      <div style={color}>
+      <div style={text}>
         <center>
           <h1 className={styles.counter}>{counter.count}</h1>
           <h4>{counter.title}</h4>
