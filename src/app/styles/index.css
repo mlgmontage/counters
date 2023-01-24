@@ -2,4 +2,8 @@
 
 :root {
   --ff: Ubuntu, sans-serif;
+
+  --gray-200: hsl(0, 0%, 80%);
+
+  --round: 0.5rem;
 }

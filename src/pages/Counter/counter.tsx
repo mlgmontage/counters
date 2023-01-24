@@ -28,9 +28,14 @@ const Counter = () => {
 
   return (
     <div className={styles.root}>
-      <h1>
-        {counter.title} {counter.count}
-      </h1>
+      <div>
+        <h1>
+          {counter.title} {counter.count}
+        </h1>
+        <center>
+          <small>{counter.description}</small>
+        </center>
+      </div>
     </div>
   );
 };

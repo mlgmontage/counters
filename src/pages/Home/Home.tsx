@@ -1,3 +1,4 @@
+import { CounterCard } from "entities/counters";
 import { countersSelector } from "entities/counters/model/counters";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
@@ -10,9 +11,12 @@ const Home = () => {
   return (
     <div className={styles.root}>
       {counters.map((counter, i) => (
-        <Link key={i} to={`/counter/${i}`}>
-          {counter.title}
-        </Link>
+        <CounterCard key={i}>
+          <Link to={`/counter/${i}`}>{counter.title}</Link>
+          <br />
+          <br />
+          {counter.description}
+        </CounterCard>
       ))}
     </div>
   );
